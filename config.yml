@@ -1,0 +1,16 @@
+title: '111111111111'
+description: '111111111111111111111111111'
+template:
+  repo: 111111111111-template
+  name: '111111111111'
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
